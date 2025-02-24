@@ -28,7 +28,7 @@ I can create lists easily:
 - One
 - Two
 
-I can also create numbered lists:
+I can also create numbered lists
 
 1. One
 2. Two
