@@ -190,7 +190,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> name(enter_your_name:<span class="bu">str</span>)<span class="op">-&gt;</span><span class="bu">str</span>:</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    n<span class="op">=</span>enter_your_name</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This is its webapp: <img src="[posts/one.png](https://github.com/Vansh-Laata/PSDV_Assignment_4/blob/17278e8be431cbab0fcbe842b2cfdc926df4af9e/posts/one.png)" class="img-fluid" alt="alt text"></p>
+<p>This is its webapp: <img src="one.png" class="img-fluid" alt="image"></p>
 <p>The following is another program which has two functions. We call the first function inside the second one.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> funix</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> No_of_characters_in_your_name(enter_your_name:<span class="bu">str</span>)<span class="op">-&gt;</span><span class="bu">int</span>:</span>
@@ -200,7 +200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    r<span class="op">=</span><span class="dv">8</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    n<span class="op">=</span>No_of_characters_in_your_name(Enter_your_name)</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span>(<span class="ss">f"Cost of painting your name on the wall is: </span><span class="sc">{</span>r<span class="op">*</span>n<span class="sc">}</span><span class="ss">Rs."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>On the Webapp: <img src="https://github.com/user-attachments/assets/7f5a401b-a961-47a7-96ca-f64f9e59f95b.png" class="img-fluid" alt="image"> <img src="https://github.com/user-attachments/assets/55fb3d81-c25d-4112-b702-bafa949c86b5.png" class="img-fluid" alt="image"></p>
+<p>On the Webapp: <img src="two.png" class="img-fluid" alt="image"> <img src="three.png" class="img-fluid" alt="image"></p>
 <p>Note: When we have multiple functions called independently(not nested), they appear separately on a menu bar on the left side of the page and have to be opened and executed separately.</p>
 </section>
 <section id="for-obtaining-the-webapp-for-a-python-program" class="level1">
@@ -209,7 +209,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>First run the python file</li>
 <li>On your terminal run the following program: <code>funix {path_to_the_python_file_as_a_string}</code></li>
 </ol>
-<p>The same steps have been showed on a VS Code Terminal in the image below <img src="https://github.com/user-attachments/assets/8e841118-52a7-443d-817a-3f8c0a5efffd.png" class="img-fluid" alt="image"></p>
+<p>The same steps have been showed on a VS Code Terminal in the image below <img src="four.png" class="img-fluid" alt="image"></p>
 </section>
 <section id="program-for-plotting-graphs" class="level1">
 <h1>Program for Plotting graphs</h1>
@@ -235,7 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="st">"X-axis"</span>)</span>
 <span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> fig</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This is how the webpage for it looks: <img src="https://github.com/user-attachments/assets/f9ed6943-a5ad-48e9-afed-f1c8ba5c8410.png" class="img-fluid" alt="image"></p>
+<p>This is how the webpage for it looks: <img src="five.png" class="img-fluid" alt="image"></p>
 <p>Let’s take a few points to note about the above program: 1. In the function definition line of the above program: <code>python     def Plot_Graphs(Function: funix.hint.Literal['A*tan(kx+c)', 'A*sin(kx+c)', "A*cos(kx+c)"],A: funix.hint.FloatSlider(0, 8, 0.1), k: funix.hint.FloatSlider(0,       10, 0.1), c: funix.hint.FloatSlider(0, 2*numpy.pi, 0.01),Colour: funix.hint.Literal['Blue', 'Green', 'Red','Black','Purple']) -&gt; matplotlib.figure.Figure:</code> The <code>-&gt;matplotlib.figure.Figure:</code> specifies that the function has to return a <code>matplotlib.figure.Figure</code> object.</p>
 <ol start="2" type="1">
 <li><p>In the following line: <code>A: funix.hint.FloatSlider(0, 8, 0.1), k: funix.hint.FloatSlider(0, 10, 0.1), c: funix.hint.FloatSlider(0, 2*numpy.pi, 0.01)</code> A, k, and c are the float values set using the slider in the webpage.</p>
