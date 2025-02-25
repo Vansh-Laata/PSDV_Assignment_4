@@ -6,7 +6,7 @@ date: "2/25/2025"
 ---
 
 
-# Program for plotting graphs
+# Dataframe
 
 
 
@@ -55,6 +55,9 @@ Or, create a table:
 | Alice | 20  |
 | Bob   | 21  |
 
+# Program for Plotting graphs
+
+A program for choosing a function(out of three functions- sine,cosine and tangent), which also allows the user to set the amplitude(A), wave number(k), phase constant(c) for the function and the color of the graph(out of four choices).
 ```python
 import funix
 import matplotlib.pyplot as plt
@@ -78,3 +81,21 @@ def Plot_Graphs(Function: funix.hint.Literal['A*tan(kx+c)', 'A*sin(kx+c)', "A*co
     
     return fig
 ```
+
+
+This is how the webpage looks:
+![image](https://github.com/user-attachments/assets/f9ed6943-a5ad-48e9-afed-f1c8ba5c8410)
+
+
+
+Let's take a look at the function definition line of the above program:
+```python
+def Plot_Graphs(Function: funix.hint.Literal['A*tan(kx+c)', 'A*sin(kx+c)', "A*cos(kx+c)"],A: funix.hint.FloatSlider(0, 8, 0.1), k: funix.hint.FloatSlider(0, 10, 0.1), c: funix.hint.FloatSlider(0, 2*numpy.pi, 0.01),Colour: funix.hint.Literal['Blue', 'Green', 'Red','Black','Purple']) -> matplotlib.figure.Figure:
+```
+The ```->matplotlib.figure.Figure:``` specifies that the function has to return a ```matplotlib.figure.Figure``` object.
+
+In the following line:
+```A: funix.hint.FloatSlider(0, 8, 0.1), k: funix.hint.FloatSlider(0, 10, 0.1), c: funix.hint.FloatSlider(0, 2*numpy.pi, 0.01)```
+A, k, and c are the float values set using the slider in the webpage.
+
+Similarly in ```Function: funix.hint.Literal['A*tan(kx+c)', 'A*sin(kx+c)', "A*cos(kx+c)"]``` the variable ```Function``` stores the string variable chosen using the circle checkboxes in the webpage.
