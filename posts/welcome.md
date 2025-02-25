@@ -54,7 +54,7 @@ def name(enter_your_name:str)->str:
 This is its webapp:
 ![image](https://github.com/user-attachments/assets/635b5089-5a76-4a09-98b9-46fc284d4add)
 
-The following is another program which has two functions. Notice how and we call the first function inside the first one.
+The following is another program which has two functions. We call the first function inside the second one.
 
 ```python
 import funix
@@ -72,7 +72,7 @@ On the Webapp:
 
 Note: When we have multiple functions called independently(not nested), they appear separately on a menu bar on the left side of the page and have to be opened and executed separately. 
 
-For obtaining the webapp for a python program:
+# For obtaining the webapp for a python program:
 
 1. First run the python file
 2. On your terminal run the following program: ```funix {path_to_the_python_file_as_a_string}```
@@ -125,3 +125,8 @@ Let's take a few points to note about the above program:
    and similarly in ```Function: funix.hint.Literal['A*tan(kx+c)', 'A*sin(kx+c)', "A*cos(kx+c)"]``` the variable ```Function``` stores the string variable chosen     using the circle checkboxes in the webpage.
 
    These parameters are used to plot the graphs using the ```matplotlib.figure```, ```matplotlib.pyplot``` and ```numpy``` libraries.
+# Disadvantages of funix
+1. On the webapp, the functions have to be executed manually by entering the input and clicking on the "RUN" button. We cannot control the number of times the        functions are executed through the program. This causes limitations in many situations. For e.g:
+   In the above program for plotting graphs in the webapp, to plot multiple graphs on the same figure along with taking inputs for the various parameters. However    for that we would want the function to run in a for loop wherein the user enters all parameters each time and we display a single figure after the end of the      loop with all the graphs. But, that is not possible as we cannot control the number of times the function runs through the program.
+2. Since funix maps objects to pre-defined widgets, it provides very minimal control over the widget elements to the programmer
+3. Also, Funix doesn't have any native library of its own, thus providing very basic functions.
