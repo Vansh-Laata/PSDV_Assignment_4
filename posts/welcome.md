@@ -55,9 +55,24 @@ Or, create a table:
 | Alice | 20  |
 | Bob   | 21  |
 
+# Overview about Funix
+
+Funix is a python library which converts a python function or class definition into a webapp. Anything that has to be displayed on the screen has to be returned as a function(other than the text which is used for taking an input from the user).
+Python objects get mapped to a widget through funix. This happens without manual widget creation in most cases, using its inbuilt type-to-widget mapping system.
+
+
+For obtaining the webapp:
+
+1. First run the program
+
+2. On your terminal run the following program: ```funix {path_to_the_python_file_as_a_string}```
+
+The same steps have been showed on a VS Code Terminal in the image below
+![image](https://github.com/user-attachments/assets/8e841118-52a7-443d-817a-3f8c0a5efffd)
+
 # Program for Plotting graphs
 
-A program for choosing a function(out of three functions- sine,cosine and tangent), which also allows the user to set the amplitude(A), wave number(k), phase constant(c) for the function and the color of the graph(out of four choices).
+The following is a python program for choosing a function(out of three functions- sine,cosine and tangent), which also allows the user to set the amplitude(A), wave number(k), phase constant(c) for the function and the color of the graph(out of four choices).
 ```python
 import funix
 import matplotlib.pyplot as plt
@@ -83,9 +98,8 @@ def Plot_Graphs(Function: funix.hint.Literal['A*tan(kx+c)', 'A*sin(kx+c)', "A*co
 ```
 
 
-This is how the webpage looks:
+This is how the webpage for it looks:
 ![image](https://github.com/user-attachments/assets/f9ed6943-a5ad-48e9-afed-f1c8ba5c8410)
-
 
 
 Let's take a look at the function definition line of the above program:
