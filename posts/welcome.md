@@ -27,7 +27,7 @@ def name(enter_your_name:str)->str:
 ```
 
 This is its webapp:
-![image](https://github.com/user-attachments/assets/635b5089-5a76-4a09-98b9-46fc284d4add)
+![alt text](posts/one.png)
 
 The following is another program which has two functions. We call the first function inside the second one.
 
