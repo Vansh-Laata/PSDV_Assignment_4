@@ -30,23 +30,6 @@ def table_and_plot(
 
 ```
 
-I can also write math equations:
-
-$$
-y = x^2
-$$
-
-
-I can create lists easily:
-
-- One
-- Two
-
-I can also create numbered lists:
-
-1. One
-2. Two
-
 
 Or, create a table:
 
@@ -60,11 +43,38 @@ Or, create a table:
 Funix is a python library which converts a python function or class definition into a webapp. Anything that has to be displayed on the screen has to be returned as a function(other than the text which is used for taking an input from the user).
 Python objects get mapped to a widget through funix. This happens without manual widget creation in most cases, using its inbuilt type-to-widget mapping system.
 
+Take a look at a basic python program which displays a person's name on the screen after taking it as an input on the webapp.
+```python
+import funix
+def name(enter_your_name:str)->str:
+    n=enter_your_name
+    return n
+```
 
-For obtaining the webapp:
+This is its webapp:
+![image](https://github.com/user-attachments/assets/635b5089-5a76-4a09-98b9-46fc284d4add)
 
-1. First run the program
+The following is another program which has two functions. Notice how and we call the first function inside the first one.
 
+```python
+import funix
+def No_of_characters_in_your_name(enter_your_name:str)->int:
+    return len(enter_your_name)
+
+def Calculate_Cost(Enter_your_name:str)->str:
+    r=8
+    n=No_of_characters_in_your_name(Enter_your_name)
+    return(f"Cost of painting your name on the wall is: {r*n}Rs.")
+```
+On the Webapp:
+![image](https://github.com/user-attachments/assets/7f5a401b-a961-47a7-96ca-f64f9e59f95b)
+![image](https://github.com/user-attachments/assets/55fb3d81-c25d-4112-b702-bafa949c86b5)
+
+Note: When we have multiple functions called independently(not nested), they appear separately on a menu bar on the left side of the page and have to be opened and executed separately. 
+
+For obtaining the webapp for a python program:
+
+1. First run the python file
 2. On your terminal run the following program: ```funix {path_to_the_python_file_as_a_string}```
 
 The same steps have been showed on a VS Code Terminal in the image below
