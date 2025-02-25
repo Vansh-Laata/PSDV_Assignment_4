@@ -6,37 +6,12 @@ date: "2/25/2025"
 ---
 
 
-# Dataframe
 
 
 
-```python
-import pandas, matplotlib.pyplot
-from numpy import arange, log
-from numpy.random import random
-
-def table_and_plot(
-    df: pandas.DataFrame = pandas.DataFrame({
-        "a": arange(500) + random(500)/5,
-        "b": random(500)-0.5 + log(arange(500)+1),
-        "c": log(arange(500)+1) })
-    ) -> matplotlib.figure.Figure:
-
-    fig = matplotlib.pyplot.figure()
-    matplotlib.pyplot.plot(df["a"], df["b"], 'b')
-    matplotlib.pyplot.plot(df["a"], df["c"], 'r')
-
-    return fig
-
-```
 
 
-Or, create a table:
 
-| Name  | Age |
-|-------|-----|
-| Alice | 20  |
-| Bob   | 21  |
 
 # Overview about Funix
 
@@ -125,8 +100,45 @@ Let's take a few points to note about the above program:
    and similarly in ```Function: funix.hint.Literal['A*tan(kx+c)', 'A*sin(kx+c)', "A*cos(kx+c)"]``` the variable ```Function``` stores the string variable chosen     using the circle checkboxes in the webpage.
 
    These parameters are used to plot the graphs using the ```matplotlib.figure```, ```matplotlib.pyplot``` and ```numpy``` libraries.
+
+# Plotting a Dataframe
+
+Take a look at the following program which plots a dataframe and a graph
+
+```python
+import pandas, matplotlib.pyplot
+from numpy import arange, log
+from numpy.random import random
+
+def table_and_plot(
+    df: pandas.DataFrame = pandas.DataFrame({
+        "a": arange(500),
+        "b": log(arange(500)+1) })
+    ) -> matplotlib.figure.Figure:
+
+    fig = matplotlib.pyplot.figure()
+    matplotlib.pyplot.plot(df["a"], df["b"], 'b')
+
+    return fig
+```
+![image](https://github.com/user-attachments/assets/e266b4b2-808c-427c-b49f-6279220765cd)
+
+
+In this program, we are plotting the values of column ```a``` along the X-axis and ```b=log(a)``` along the y-axis. 
+The ```matplotlib.pyplot()``` function which is being used to plot the graph using the 2 columns of the dataframe also plots the 2 columns as a table. The four columns in the heading are the default columns which appear when displaying the rows of a dataframe using ```matplotlib.pyplot()```.
+
 # Disadvantages of funix
 1. On the webapp, the functions have to be executed manually by entering the input and clicking on the "RUN" button. We cannot control the number of times the        functions are executed through the program. This causes limitations in many situations. For e.g:
    In the above program for plotting graphs in the webapp, to plot multiple graphs on the same figure along with taking inputs for the various parameters. However    for that we would want the function to run in a for loop wherein the user enters all parameters each time and we display a single figure after the end of the      loop with all the graphs. But, that is not possible as we cannot control the number of times the function runs through the program.
 2. Since funix maps objects to pre-defined widgets, it provides very minimal control over the widget elements to the programmer
 3. Also, Funix doesn't have any native library of its own, thus providing very basic functions.
+
+# Comparison of funix with Streamlit and Gradio libraries
+
+| **Funix**         | **Gradio**                                   | **Streamlit**           |
+|--------------------|----------------------------------------------|--------------------------|
+| UI Generation is fully automatic | Some blocks are predefined while some are manually placed | Manual widget placement |
+| Customisation is very limited as it's fully automatic | Customisation is limited to Gradio Components | CSS themes and HTML codes allow huge scope for customisation |
+| Session-less       | It is session based                          | It has reactive script reruns |
+
+Funix is much easier to use that the Streamlit and Gradio because of its fully automatic UI generation features.
