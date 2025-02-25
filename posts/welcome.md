@@ -13,7 +13,23 @@ date: "2/14/2025"
 I can write in markdown
 
 ```python
-print("Hello World")
+import pandas, matplotlib.pyplot
+from numpy import arange, log
+from numpy.random import random
+
+def table_and_plot(
+    df: pandas.DataFrame = pandas.DataFrame({
+        "a": arange(500) + random(500)/5,
+        "b": random(500)-0.5 + log(arange(500)+1),
+        "c": log(arange(500)+1) })
+    ) -> matplotlib.figure.Figure:
+
+    fig = matplotlib.pyplot.figure()
+    matplotlib.pyplot.plot(df["a"], df["b"], 'b')
+    matplotlib.pyplot.plot(df["a"], df["c"], 'r')
+
+    return fig
+
 ```
 
 I can also write math equations:
