@@ -1,16 +1,14 @@
 ---
-title: "Welcome"
+title: "Funix Library"
 description: "Welcome Post"
-author: "Nipun Batra"
-date: "2/14/2025"
+author: "J004-Siddhartha Hrishikesha Voleti, Vansh Lata, Madhvikaben Vasava"
+date: "2/25/2025"
 ---
 
 
-# Welcome
+# Program for plotting graphs
 
-**Hello world**, this is my first blog post.
 
-I can write in markdown
 
 ```python
 import pandas, matplotlib.pyplot
