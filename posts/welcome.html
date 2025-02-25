@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-8e00f2f28a1266a720913de837032221.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-7cfa380d139a4d61a924487b0af32b39.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-e3acdd9b67e85dd7c39f851874d9197e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    n<span class="op">=</span>enter_your_name</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> n</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This is its webapp: <img src="https://github.com/user-attachments/assets/635b5089-5a76-4a09-98b9-46fc284d4add.png" class="img-fluid" alt="image"></p>
-<p>The following is another program which has two functions. Notice how and we call the first function inside the first one.</p>
+<p>The following is another program which has two functions. We call the first function inside the second one.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> funix</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> No_of_characters_in_your_name(enter_your_name:<span class="bu">str</span>)<span class="op">-&gt;</span><span class="bu">int</span>:</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">len</span>(enter_your_name)</span>
@@ -241,7 +241,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span>(<span class="ss">f"Cost of painting your name on the wall is: </span><span class="sc">{</span>r<span class="op">*</span>n<span class="sc">}</span><span class="ss">Rs."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>On the Webapp: <img src="https://github.com/user-attachments/assets/7f5a401b-a961-47a7-96ca-f64f9e59f95b.png" class="img-fluid" alt="image"> <img src="https://github.com/user-attachments/assets/55fb3d81-c25d-4112-b702-bafa949c86b5.png" class="img-fluid" alt="image"></p>
 <p>Note: When we have multiple functions called independently(not nested), they appear separately on a menu bar on the left side of the page and have to be opened and executed separately.</p>
-<p>For obtaining the webapp for a python program:</p>
+</section>
+<section id="for-obtaining-the-webapp-for-a-python-program" class="level1">
+<h1>For obtaining the webapp for a python program:</h1>
 <ol type="1">
 <li>First run the python file</li>
 <li>On your terminal run the following program: <code>funix {path_to_the_python_file_as_a_string}</code></li>
@@ -277,7 +279,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol start="2" type="1">
 <li><p>In the following line: <code>A: funix.hint.FloatSlider(0, 8, 0.1), k: funix.hint.FloatSlider(0, 10, 0.1), c: funix.hint.FloatSlider(0, 2*numpy.pi, 0.01)</code> A, k, and c are the float values set using the slider in the webpage.</p>
 <p>and similarly in <code>Function: funix.hint.Literal['A*tan(kx+c)', 'A*sin(kx+c)', "A*cos(kx+c)"]</code> the variable <code>Function</code> stores the string variable chosen using the circle checkboxes in the webpage.</p>
-<p>These parameters are used to plot the graphs using the <code>matplotlib.figure</code>, <code>matplotlib.pyplot</code> and <code>numpy</code> libraries.</p></li>
+<p>These parameters are used to plot the graphs using the <code>matplotlib.figure</code>, <code>matplotlib.pyplot</code> and <code>numpy</code> libraries. # Disadvantages of funix</p></li>
+<li><p>On the webapp, the functions have to be executed manually by entering the input and clicking on the “RUN” button. We cannot control the number of times the functions are executed through the program. This causes limitations in many situations. For e.g: In the above program for plotting graphs in the webapp, to plot multiple graphs on the same figure along with taking inputs for the various parameters. However for that we would want the function to run in a for loop wherein the user enters all parameters each time and we display a single figure after the end of the loop with all the graphs. But, that is not possible as we cannot control the number of times the function runs through the program.</p></li>
+<li><p>Since funix maps objects to pre-defined widgets, it provides very minimal control over the widget elements to the programmer</p></li>
+<li><p>Also, Funix doesn’t have any native library of its own, thus providing very basic functions.</p></li>
 </ol>
 
 
