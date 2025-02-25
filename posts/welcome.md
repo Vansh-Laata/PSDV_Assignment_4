@@ -53,7 +53,7 @@ Note: When we have multiple functions called independently(not nested), they app
 2. On your terminal run the following program: ```funix {path_to_the_python_file_as_a_string}```
 
 The same steps have been showed on a VS Code Terminal in the image below
-![image](four.png)
+![image](extra.png)
 
 # Program for Plotting graphs
 
@@ -84,7 +84,7 @@ def Plot_Graphs(Function: funix.hint.Literal['A*tan(kx+c)', 'A*sin(kx+c)', "A*co
 
 
 This is how the webpage for it looks:
-![image](five.png)
+![image](four.png)
 
 Let's take a few points to note about the above program:
 1. In the function definition line of the above program:
@@ -121,7 +121,7 @@ def table_and_plot(
 
     return fig
 ```
-![image](https://github.com/user-attachments/assets/e266b4b2-808c-427c-b49f-6279220765cd)
+![image](five.png)
 
 
 In this program, we are plotting the values of column ```a``` along the X-axis and ```b=log(a)``` along the y-axis. 
