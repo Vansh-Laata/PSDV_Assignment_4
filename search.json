@@ -11,7 +11,7 @@
     "href": "posts/welcome.html",
     "title": "Welcome",
     "section": "",
-    "text": "Welcome\nHello world, this is my first blog post.\nI can write in markdown\nprint(\"Hello World\")\nI can also write math equations:\n\\[\ny = x^2\n\\]\nI can create lists easily:\n\nOne\nTwo\n\nI can also create numbered lists:\n\nOne\nTwo\n\nOr, create a table:\n\n\n\nName\nAge\n\n\n\n\nAlice\n20\n\n\nBob\n21"
+    "text": "Welcome\nHello world, this is my first blog post.\nI can write in markdown\nimport pandas, matplotlib.pyplot\nfrom numpy import arange, log\nfrom numpy.random import random\n\ndef table_and_plot(\n    df: pandas.DataFrame = pandas.DataFrame({\n        \"a\": arange(500) + random(500)/5,\n        \"b\": random(500)-0.5 + log(arange(500)+1),\n        \"c\": log(arange(500)+1) })\n    ) -&gt; matplotlib.figure.Figure:\n\n    fig = matplotlib.pyplot.figure()\n    matplotlib.pyplot.plot(df[\"a\"], df[\"b\"], 'b')\n    matplotlib.pyplot.plot(df[\"a\"], df[\"c\"], 'r')\n\n    return fig\nI can also write math equations:\n\\[\ny = x^2\n\\]\nI can create lists easily:\n\nOne\nTwo\n\nI can also create numbered lists:\n\nOne\nTwo\n\nOr, create a table:\n\n\n\nName\nAge\n\n\n\n\nAlice\n20\n\n\nBob\n21"
   },
   {
     "objectID": "posts/visualisation.html",
