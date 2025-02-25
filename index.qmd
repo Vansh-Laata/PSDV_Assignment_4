@@ -1,5 +1,5 @@
 ---
-title: Quarto Template
+title: Expository Assignment-Funix Library
 ---
 
-Quarto template Text!
+Blog by Group J004
