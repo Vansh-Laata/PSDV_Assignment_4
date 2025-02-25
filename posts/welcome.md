@@ -1,6 +1,6 @@
 ---
 title: "Funix Library"
-description: "Welcome Post"
+description: "Expanatory Blog"
 author: "J004-Siddhartha Hrishikesha Voleti, Vansh Lata, Madhvikaben Vasava"
 date: "2/25/2025"
 ---
