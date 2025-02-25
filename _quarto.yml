@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Quarto Template"
+  title: "Expository Assignment-Funix Library"
   navbar:
     right:
       - href: index.qmd
