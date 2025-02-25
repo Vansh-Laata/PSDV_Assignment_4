@@ -27,7 +27,7 @@ def name(enter_your_name:str)->str:
 ```
 
 This is its webapp:
-![alt text]([posts/one.png](https://github.com/Vansh-Laata/PSDV_Assignment_4/blob/17278e8be431cbab0fcbe842b2cfdc926df4af9e/posts/one.png))
+![image](one.png)
 
 The following is another program which has two functions. We call the first function inside the second one.
 
@@ -42,8 +42,8 @@ def Calculate_Cost(Enter_your_name:str)->str:
     return(f"Cost of painting your name on the wall is: {r*n}Rs.")
 ```
 On the Webapp:
-![image](https://github.com/user-attachments/assets/7f5a401b-a961-47a7-96ca-f64f9e59f95b)
-![image](https://github.com/user-attachments/assets/55fb3d81-c25d-4112-b702-bafa949c86b5)
+![image](two.png)
+![image](three.png)
 
 Note: When we have multiple functions called independently(not nested), they appear separately on a menu bar on the left side of the page and have to be opened and executed separately. 
 
@@ -53,7 +53,7 @@ Note: When we have multiple functions called independently(not nested), they app
 2. On your terminal run the following program: ```funix {path_to_the_python_file_as_a_string}```
 
 The same steps have been showed on a VS Code Terminal in the image below
-![image](https://github.com/user-attachments/assets/8e841118-52a7-443d-817a-3f8c0a5efffd)
+![image](four.png)
 
 # Program for Plotting graphs
 
@@ -84,7 +84,7 @@ def Plot_Graphs(Function: funix.hint.Literal['A*tan(kx+c)', 'A*sin(kx+c)', "A*co
 
 
 This is how the webpage for it looks:
-![image](https://github.com/user-attachments/assets/f9ed6943-a5ad-48e9-afed-f1c8ba5c8410)
+![image](five.png)
 
 Let's take a few points to note about the above program:
 1. In the function definition line of the above program:
